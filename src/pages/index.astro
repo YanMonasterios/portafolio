@@ -1,0 +1,36 @@
+---
+import Badge from '../components/badge.astro';
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="welcome to astro.">
+	<main>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<!-- <Welcome /> -->
+		 <!-- <img class="rounded-full w-12 h-12" src="" alt="image"/> -->
+		 <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+			Hey, soy Yan <a 
+			href="https://www.linkedin.com/in/yan-monasterios-a1231a258/" 
+			target="_blanck"
+			rel="noopener"
+			class="flex justify-center items-center"
+			
+			>
+			<Badge>disponible para trabajar</Badge>
+			</a>
+		</h1>
+		 <h2 class="text-xl text-wrap">
+			<span class="opacity-80">Desarrollador Web con experiencia en soluciones innovadoras.</span>
+			<span class="text-blue-300/90"> Mi pasion es
+			mantenerme en constante formación.</span>
+		 </h2>
+
+		 <ul>
+			<li> <a href="https://www.linkedin.com/in/yan-monasterios-a1231a258/" > Linkedin</a> </li>
+			<li> <a href=""></a> </li>
+			<li> <a href=""></a> </li>
+		 </ul>
+		</section>
+	</main>
+</Layout>

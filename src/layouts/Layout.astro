@@ -1,0 +1,48 @@
+---
+import "@fontsource-variable/onest";
+
+import Header from "../components/Header.astro";
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Portafolio</title>
+	</head>
+
+	
+	<body>
+		<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+		<Header/>
+		<slot />
+	</body>
+
+
+</html>
+
+<style is:global>
+	:root{
+		color-scheme: light dark;
+	}
+
+	html{
+		/* margin: 0;
+		width: 100%;
+		height: 100%; */
+		font-family: "Onest Variable",system-ui, sans-serif;
+	}
+	body {
+		
+		background: #050505;
+		display: flex;
+		flex-direction: column;  /* para que vaya uno arriba del otro */
+		/* justify-content: center; */
+		height: 100vh;
+
+	}
+</style>
