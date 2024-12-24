@@ -2,6 +2,8 @@
 import Badge from '../components/badge.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import LinkedinIcon from '../components/icons/linkedin.astro';
+import TagsSocial from '../components/tagsSocial.astro';
 ---
 
 <Layout title="welcome to astro.">
@@ -27,9 +29,11 @@ import Layout from '../layouts/Layout.astro';
 		 </h2>
 
 		 <ul>
-			<li> <a href="https://www.linkedin.com/in/yan-monasterios-a1231a258/" > Linkedin</a> </li>
-			<li> <a href=""></a> </li>
-			<li> <a href=""></a> </li>
+			<li> 
+				<TagsSocial>
+					<LinkedinIcon class="w-6 h-6" /> LinkedIn
+				</TagsSocial>
+			</li>
 		 </ul>
 		</section>
 	</main>
