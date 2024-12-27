@@ -4,11 +4,16 @@ import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import LinkedinIcon from '../components/icons/linkedin.astro';
 import TagsSocial from '../components/tagsSocial.astro';
+import GithubIcon from '../components/icons/github.astro';
+import MailIcon from '../components/icons/mail.astro';
+import Experience from '../components/experience.astro';
+import SectionContainer from '../components/sectionContainer.astro';
+import Briefcase from '../components/icons/briefcase.astro';
 ---
 
-<Layout title="welcome to astro.">
+<Layout title="Portfolio de Yan - Desarrollador web." description="Contrata a yan">
 	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<SectionContainer class="py-44 pb-24">
 		<!-- <Welcome /> -->
 		 <!-- <img class="rounded-full w-12 h-12" src="" alt="image"/> -->
 		 <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
@@ -28,13 +33,29 @@ import TagsSocial from '../components/tagsSocial.astro';
 			mantenerme en constante formación.</span>
 		 </h2>
 
-		 <ul>
-			<li> 
-				<TagsSocial>
-					<LinkedinIcon class="w-6 h-6" /> LinkedIn
+		 	<nav class="flex gap-x-4 mt-8">
+				<TagsSocial href="https://www.linkedin.com/in/yan-monasterios-a1231a258/">
+					<LinkedinIcon class="size-6" />
+					Linkedin
 				</TagsSocial>
-			</li>
-		 </ul>
-		</section>
+				<TagsSocial href="https://www.github.com/YanMonasterios">
+					<GithubIcon class="size-6" /> 
+					GitHub
+				</TagsSocial>
+				<TagsSocial href="https://www.github.com/YanMonasterios">
+					<MailIcon class="size-6" /> 
+					Email
+				</TagsSocial>
+				
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-2xl font-semibold mb-5 flex gap-x-3 items-center">
+				<Briefcase class="size-7"/>
+				Experiencia Laboral
+			</h2>
+			<Experience/>
+		</SectionContainer>
 	</main>
 </Layout>

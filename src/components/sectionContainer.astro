@@ -1,0 +1,9 @@
+---
+const {class:className, id} = Astro.props
+---
+
+<!-- todo esto significa que puedo reutlizar el section con estos estilos ya definidos
+ pero si necesito unos especificos le mando el classname -->
+<section id={id} class={`w-full lg:w-[740px] mx-auto ${className}`}>
+    <slot></slot>
+</section>
